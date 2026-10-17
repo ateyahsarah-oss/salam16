@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff0f7">
+    <title>لعبة اللغة العربية - سلمى عطية</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <main class="game-container">
+
+        <section id="start-screen" class="screen start-screen">
+            <div class="decoration" aria-hidden="true">🌸 💗 🌸</div>
+
+            <h1 class="student-name">سلمى عطية</h1>
+            <p class="student-class">الصف الخامس</p>
+
+            <div class="title-box">
+                <h2>الجملة الاسمية</h2>
+                <h2>والجملة الفعلية</h2>
+            </div>
+
+            <p class="welcome-text">
+                أهلًا بكِ في لعبة اللغة العربية
+                <br>
+                هل أنتِ مستعدة للتحدي؟ 🌷
+            </p>
+
+            <button id="start-btn" type="button">
+                ابدئي اللعبة ▶
+            </button>
+        </section>
+
+        <section id="game-screen" class="screen game-screen" style="display: none;">
+            <h1 class="game-heading">🌸 هيا نلعب ونتعلم 🌸</h1>
+
+            <div class="game-info">
+                <div id="score-board">
+                    ⭐ النقاط: <span id="score">0</span>
+                </div>
+                <div id="question-counter">السؤال 1</div>
+            </div>
+
+            <div id="question-box">
+                <p id="sentence-text"></p>
+            </div>
+
+            <div id="choices" class="choices"></div>
+
+            <div id="feedback" aria-live="polite"></div>
+
+            <button id="next-btn" type="button" style="display: none;">
+                السؤال التالي ←
+            </button>
+
+            <button id="restart-btn" type="button" style="display: none;">
+                🔄 أعيدي اللعب
+            </button>
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

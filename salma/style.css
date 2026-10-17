@@ -1,0 +1,83 @@
+body {
+    font-family: 'Cairo', Tahoma, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 22px;
+}
+
+#score-board {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #16a085;
+    font-weight: bold;
+}
+
+#question-box {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #34495e;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.choice-btn {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    transition: background 0.3s;
+}
+
+.choice-btn:hover {
+    background-color: #2980b9;
+}
+
+#feedback {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#next-btn {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#next-btn:hover {
+    background-color: #27ae60;
+}
